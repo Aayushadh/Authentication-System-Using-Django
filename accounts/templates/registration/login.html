@@ -1,0 +1,12 @@
+{% extends 'index.html' %}
+
+{% block content %}
+
+<h1>Login to your form</h1>
+<form action="" method="POST">
+   {% csrf_token %}
+   {{form.as_p}}
+    <button>Register</button>
+</form>
+
+ {% endblock %} 
